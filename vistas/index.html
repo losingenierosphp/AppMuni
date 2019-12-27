@@ -4,11 +4,20 @@
     <title>Hello World!</title>
     <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+      <style>
+      
+      .login{
+          width: 300px;
+          padding: 10px;
+          margin: auto;
+      }
+      </style>
+   <div class="login">
+       <input type="text" class="form-control" placeholder="Nombre">
+       <input type="password"  class="form-control" placeholder="Password">
+   </div>
   </body>
 </html>
