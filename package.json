@@ -1,0 +1,22 @@
+{
+  "name": "app-muni",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/losingenierosphp/AppMuni.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/losingenierosphp/AppMuni/issues"
+  },
+  "homepage": "https://github.com/losingenierosphp/AppMuni#readme",
+  "devDependencies": {
+    "electron": "^7.1.7"
+  }
+}
