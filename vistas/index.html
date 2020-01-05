@@ -1,12 +1,13 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>Municipalidad de Huechuraba</title>
     <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/estilos.css">
   </head>
-  <body>
+  <body style="-webkit-app-region: drag">
       <style>
       
       .login{
@@ -22,7 +23,13 @@
        <img class="img" width="100" src="img/logo.png" alt="">
        <input type="text" class="form-control" placeholder="Nombre">
        <input type="password"  class="form-control" placeholder="Password">
-       <button class="btn btn-success btn-block"> ingresar</button>
+       <button id="ingresar" class="btn btn-success btn-block"> ingresar</button>
    </div>
   </body>
+  <script>
+  var ing = document.getElementById("ingresar")
+  ing.addEventListener('click',function(){
+    document.location.href = "page2.html"
+  })
+  </script>
 </html>

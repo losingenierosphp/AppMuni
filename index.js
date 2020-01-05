@@ -1,6 +1,6 @@
 const { app, BrowserWindow } = require('electron')
 const mysql = require('mysql')
-
+/*
 const connection = mysql.createConnection({
    host:'35.226.224.5',
    user: 'root',
@@ -16,14 +16,17 @@ connection.query('SELECT 1 + 1 AS result', function (error, results, fields) {
 });
 
 connection.end();  
-
+*/
 function createWindow () {
   // Create the browser window.
   let win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 800, //ancho de la ventana
+    height: 600, //altura de la entana 
+    frame: false, //ventana sin bordes 
+   
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: true,
+      devTools: false //bloquear el developer tools de los navegadores 
     }
   })
 
