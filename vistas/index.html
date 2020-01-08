@@ -26,9 +26,18 @@
    </div>
   </body>
   <script>
-  var ing = document.getElementById("ingresar")
-  ing.addEventListener('click',function(){
-    document.location.href = "page2.html"
+
+
+    var user = document.getElementById("usuario").value
+    var password = document.getElementById("passsword").value
+
+   /*query*/
+
+    var ing = document.getElementById("ingresar")
+    ing.addEventListener('click',function(){
+    if(query.equal(1)){
+      document.location.href = "page2.html"
+    }  
   })
   </script>
 </html>

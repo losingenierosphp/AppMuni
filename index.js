@@ -1,15 +1,24 @@
 const { app, BrowserWindow,Menu } = require('electron')
 const shell = require('electron').shell
-//const mysql = require('mysql')
-/*
+const mysql = require('mysql')
+
+
 const connection = mysql.createConnection({
-   host:'35.226.224.5',
+   host:'localhost',
    user: 'root',
+   port:'8080',
    password:'root',
-   database: 'dataMuni'
+   database: 'app-muni'
 })
 
-connection.connect()
+connection.connect(function(err){
+  if(err){
+    console.log("conexion fallida");
+    
+  }else{
+   console.log("conexion exitosa")
+  }
+})
 
 connection.query('SELECT 1 + 1 AS result', function (error, results, fields) {
   if (error) throw error;
@@ -17,7 +26,7 @@ connection.query('SELECT 1 + 1 AS result', function (error, results, fields) {
 });
 
 connection.end();  
-*/
+
 function createWindow () {
   // crea una ventana 
   let win = new BrowserWindow({
@@ -27,7 +36,7 @@ function createWindow () {
     icon: "vistas/img/icon.png",
     webPreferences: {
       nodeIntegration: true,
-      devTools: false //bloquear el developer tools de los navegadores 
+      devTools: true //bloquear el developer tools de los navegadores 
     }
   }
   )
