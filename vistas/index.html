@@ -31,7 +31,10 @@
     var user = document.getElementById("usuario").value
     var password = document.getElementById("passsword").value
 
+
+    /*falta el pool de conexion */
    /*query*/
+    var query = "select * from usuarios where email ="+user+" and password = "+password+";"
 
     var ing = document.getElementById("ingresar")
     ing.addEventListener('click',function(){
